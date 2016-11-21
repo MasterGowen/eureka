@@ -1,0 +1,50 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% load socialaccount %}
+{% load account %}
+{% load bootstrap %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block content %}
+  <div class="col-md-12 col-lg-offset-2">
+    <div class="login-signup">
+      <div class="row">
+        <div class="col-md-8 nav-tab-holder">
+          
+        </div>
+      </div>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <div class="row">
+            <div class="col-md-8 mobile-pull">
+              <article role="login">
+                <h3 class="text-center"><i class="fa fa-lock"></i>{% trans "Sign In" %}</h3>
+                <form class="login" method="POST" action="{% url 'account_login' %}">
+                  {% csrf_token %}
+                  {{ form | bootstrap }}
+                  {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                  {% endif %}
+                  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+                  <button class="btn btn-primary" type="submit">{% trans "Sign In" %}</button>
+                </form>
+                <hr>
+                {# {% if socialaccount.providers  %} #}
+                  <p>{% blocktrans with site.name as site_name %}Please sign in with one
+                    of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+                  for a {{site_name}} account and sign in below:{% endblocktrans %}</p>
+                    <div class="socialaccount_providers">
+                    <ul>
+                      {% include "socialaccount/snippets/provider_list.html" %}
+                    </ul>
+                    </div>
+                  {% include "socialaccount/snippets/login_extra.html" %}
+                {# {% endif %} #}
+                <footer role="signup" class="text-center">
+                </footer>
+              </article>
+            </div>
+            
+          </div>
+          <!-- end of row -->
+        </div>
+      {% endblock %}
