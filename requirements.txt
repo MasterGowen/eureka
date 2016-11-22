@@ -1,0 +1,4 @@
+Django==1.10.3
+django-allauth==0.28.0
+django-bootstrap-form==3.2.1
+
