@@ -133,7 +133,7 @@ USE_L10N = True
 USE_TZ = True
 
 AUTH_USER_MODEL = "core.User"
-LOGIN_REDIRECT_URL = "/profile/"
+LOGIN_REDIRECT_URL = "/top/"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if answers %}
+    <ul>
+        {% for answer in answers %}
+        <li><p>{{answer}}</p></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}

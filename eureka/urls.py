@@ -16,12 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from apps.core.views import profile
+from apps.core.views import profile, top_bids
 
 urlpatterns = [
     #url(r'^/', include('core.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('allauth.urls')),
+    url(r'^top/$', top_bids),
     url(r'^profile/$', profile)
 
 ]
