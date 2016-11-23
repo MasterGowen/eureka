@@ -1,156 +1,167 @@
+{% load activetag %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <title>{% block head_title %}{% endblock %}</title>
-        {% block extra_head %}
-        {% endblock %}
-    </head>
-    <body>
-    <div class="container">
-        {% block body %}
-            <ul>
-                {% if user.is_authenticated %}
-                    <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
-                    <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
-                {% else %}
-                    <li><a href="{% url 'account_login' %}">Sign In</a></li>
-                    <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
-                {% endif %}
-            </ul>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>{% block head_title %}{% endblock %}</title>
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Eureka</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="{% active 'top' %}"><a href="{% url "top" %}">Топ</a></li>
+            <li class="{% active '^/$' %}"><a href="{% url "home" %}">Мои заявки</a></li>
+            <li class="{% active 'bids' %}"><a href="{% url "bids" %}">Все заявки</a></li>
+            <li class="{% active 'bid_create' %}"><a href="{% url "bid_create" %}">Создать заявку</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {% if user.is_authenticated %}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{user.username}} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+                  <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+                </ul>
+              </li>
+            {% else %}
+              <li><a href="{% url 'account_login' %}">Sign In</a></li>
+              <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+            {% endif %}
+          </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <div id="main">
+        <div class="container">
+          {% block body %}
             {% block content %}
             {% endblock %}
-        {% endblock %}
-        {% block extra_body %}
-        {% endblock %}
+          {% endblock %}
+          {% block extra_body %}
+          {% endblock %}
         </div>
+      </div>
     </body>
     <style type="text/css">
-        
-.login-signup {
-  padding: 25 0 25px;
-  margin-top:25px;
-
-}
-
-.login-signup {
-  padding: 0 0 25px;
-}
-
-
-.btn-success {
-  background: #23bab5;
-  border-radius:0;
-  border: 2px solid #23bab5;
-  webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
-  transition: all 400ms cubic-bezier(.4,0,.2,1);
-}
-
-
-a {
-  color: #23bab5;
-}
-
-ul {
-  list-style-type: none;
-}
-
-article[role="login"] {
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
-  webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 30px 50px;
-  margin-bottom: 20px;
-}
-
-article[role="login"] input[type="submit"] {
-  padding: 10px 15px;
-  font-size: 16px;
-}
-
-article[role="login"]:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
-  webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-article[role="login"] h3 {
-  font-size: 26px;
-  font-weight: 300;
-  color: #23bab5;
-  margin-bottom: 20px;
-}
-
-article[role="login"] p {
-  font-size: 16px;
-  padding: 5px 15px;
-}
-
-.nav-tab-holder {
-  padding: 0 0 0 30px;
-  float: right;
-}
-  .nav-tab-holder {
+    
+    #main {
+    margin-top: 5.5em;
+    }
+    .login-signup {
+    padding: 25 0 25px;
+    margin-top:25px;
+    }
+    .login-signup {
+    padding: 0 0 25px;
+    }
+    .btn-success {
+    background: #23bab5;
+    border-radius:0;
+    border: 2px solid #23bab5;
+    webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
+    transition: all 400ms cubic-bezier(.4,0,.2,1);
+    }
+    a {
+    color: #23bab5;
+    }
+    ul {
+    list-style-type: none;
+    }
+    article[role="login"] {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 30px 50px;
+    margin-bottom: 20px;
+    }
+    article[role="login"] input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    }
+    article[role="login"]:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 15px rgba(0, 0, 0, 0.23);
+    webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    article[role="login"] h3 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #23bab5;
+    margin-bottom: 20px;
+    }
+    article[role="login"] p {
+    font-size: 16px;
+    padding: 5px 15px;
+    }
+    .nav-tab-holder {
+    padding: 0 0 0 30px;
+    float: right;
+    }
+    .nav-tab-holder {
     float: none;
     overflow: hidden;
-  }
-
-  .nav-tabs > li > a {
+    }
+    .nav-tabs > li > a {
     font-size: 13px;
     font-weight: 600;
     padding: 10px 5px;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .nav-tabs > li {
+    }
+    .nav-tabs > li {
     width: 50%;
-  }
-
-.nav-tab-holder .nav-tabs {
-  border: 0;
-  float: none;
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  
-}
-
-
-.nav-tab-holder 
-.nav-tabs > li > a {
-  background: #d9d9d9;
-  color: #6c6c6c;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.nav-tab-holder .nav-tabs > li {
-  margin-bottom: -3px;
-  text-align: center;
-  padding: 0;
-  display: table-cell;
-  float: none;
-  padding: 0;
-}
-
-
-
-.nav-tab-holder .nav-tabs > li.active > a, 
-.nav-tabs > li.active > a:hover, 
-.nav-tabs > li.active > a:focus {
-  color: #FFF;
-  background-color: #23bab5;
-  border: 0;
-  border-radius: 0;
-}
-.socialaccount_providers ul, li, a {
+    }
+    .nav-tab-holder .nav-tabs {
+    border: 0;
+    float: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    
+    }
+    .nav-tab-holder
+    .nav-tabs > li > a {
+    background: #d9d9d9;
+    color: #6c6c6c;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    }
+    .nav-tab-holder .nav-tabs > li {
+    margin-bottom: -3px;
+    text-align: center;
+    padding: 0;
+    display: table-cell;
+    float: none;
+    padding: 0;
+    }
+    .nav-tab-holder .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+    color: #FFF;
+    background-color: #23bab5;
+    border: 0;
+    border-radius: 0;
+    }
+    .socialaccount_providers ul, li, a {
     display: inline;
-}
+    }
     </style>
-</html>
+  </html>

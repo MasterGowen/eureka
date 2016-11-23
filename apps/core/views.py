@@ -6,6 +6,8 @@ from django.urls import reverse
 from django.views.generic.edit import CreateView
 from django.views.generic.detail import DetailView
 
+from django.db import IntegrityError
+
 from .models import User, Bid, Answer
 
 @require_http_methods(["GET", ])
@@ -51,9 +53,16 @@ class AnswerCreate(CreateView):
         return reverse('bid_detail', args=(self.object.bid.id,))
 
     def form_valid(self, form):
-        form.instance.author = self.request.user
-        form.instance.bid = Bid.objects.get(pk=self.kwargs['pk'])
-        return super(AnswerCreate, self).form_valid(form)
+        bid = Bid.objects.get(pk=self.kwargs['pk'])
+        author = self.request.user
+        if author != bid.author:
+            form.instance.author = author
+            form.instance.bid = bid
+        try:
+            return super(AnswerCreate, self).form_valid(form)
+        except IntegrityError:
+            form.add_error('description',  'Вы не можете отвечать на собственную заявку')
+            return self.form_invalid(form)
 
 
 @require_http_methods(["GET", ])

@@ -1,16 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-
-{% if answers %}
-    <ul>
-        {% for answer in answers %}
-        <li>
-        <p><strong>{{answer.bid.product}}</strong></p>
-        <p>{{answer.price}} {{answer.get_currency_display}}</p>
-        <p>{{answer.description}}</p>
-        <p>{{answer.url}}</p></li>
-        {% endfor %}
-    </ul>
-{% endif %}
-
+    <h2>Топ заявок</h2>
+    {% if answers %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Продукт</th>
+                    <th>Стоимость</th>
+                    <th>Описание</th>
+                    <th>Ссылка (Купить)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for answer in answers %}
+                    <tr>
+                    <td>{{forloop.counter}}</td>
+                        <td><strong>{{answer.bid.product}}</strong></td>
+                        <td>{{answer.price}} {{answer.get_currency_display}}</td>
+                        <td>{{answer.description}}</td>
+                        <td>{{answer.url}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
 {% endblock %}

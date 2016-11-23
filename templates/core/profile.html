@@ -1,22 +1,33 @@
 {% extends "base.html" %}
+{% load tz %}
+{% load i18n %}
 
 {% block content %}
-<h3>Заявки пользователя</h3>
-<div class="row">
-
-<a href='{% url "bid_create" %}'>Создать заявку</a>
-
-    <div class="span6 offset3 ">
-        {% if bids %}
-    <ul>
-        {% for bid in bids %}
-        <li><p>{{bid.product}}<br>
-            {{bid.description}}<br>
-            {{bid.get_status_display}}<br>
-            {{bid.created}}</p></li>
-        {% endfor %}
-    </ul>
-{% endif %}
-    </div>
-</div>
-{% endblock %}
+    <h3>Заявки пользователя</h3>
+    {% if bids %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Продукт</th>
+                    <th>Описание</th>
+                    <th>Статус</th>
+                    <th>Дата создания</th>
+                    <th>Детализация</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for bid in bids %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{bid.product}}</td>
+                        <td>{{bid.description}}</td>
+                        <td>{{bid.get_status_display}}</td>
+                        <td>{{ bid.created| localtime |time:"H:i"  }} {{ bid.created | date:"D d M Y"}} </td>
+                        <td><a href='{% url "bid_detail" bid.id %}'>Просмотр</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    {% endblock %}

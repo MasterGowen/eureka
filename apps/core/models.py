@@ -1,15 +1,17 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.contrib import admin
+from django.core.validators import MinValueValidator
 
 import uuid
+from decimal import *
 
 
 class User(AbstractUser):
     name = models.CharField(max_length=500, blank=True)  # Имя - это не текст, это строка!
     phone_number = models.CharField(max_length=30, blank=True) # Не надо транслита, никаких tel, это нечитаемо в коде!
     email = models.EmailField(max_length=30, blank=True)  # Email - всегда EmailField!
-    balance = models.DecimalField(default=0, decimal_places=2, max_digits=12, blank=False)  # Деньги - всегда DecimalField!
+    balance = models.DecimalField(default=0, decimal_places=2, max_digits=12, blank=False, validators=[MinValueValidator(Decimal('0.01'))])  # Деньги - всегда DecimalField!
     #role = models.IntegerField(default=1, blank=False)
 
 
@@ -33,7 +35,7 @@ class Bid(models.Model):
     updated = models.DateTimeField(auto_now=True)  # Сохраняем время последнего изменения
 
     def get_absolute_url(self):  # TODO: Убить эту дичь!
-        return '/profile/'
+        return '/'
 
 
 class Answer(models.Model):
@@ -41,7 +43,7 @@ class Answer(models.Model):
     bid = models.ForeignKey(Bid, on_delete=models.CASCADE, blank=False)
     description = models.TextField(max_length=500, blank=False)
     status = models.IntegerField(default=0)  # 0 - актуальный 1- не актуальный
-    price = models.DecimalField(default=0, decimal_places=2, max_digits=12, blank=False)
+    price = models.DecimalField(default=0, decimal_places=2, max_digits=12, blank=False,  validators=[MinValueValidator(Decimal('0.01'))])
     CURRENCIES = (
         ('rur', 'RUR'),
         ('usd', 'USD'),
