@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h3>Заявки пользователя</h3>
+<h3>Все заявки</h3>
 <div class="row">
-
-<a href='{% url "bid_create" %}'>Создать заявку</a>
-
     <div class="span6 offset3 ">
         {% if bids %}
     <ul>
@@ -13,10 +10,13 @@
         <li><p>{{bid.product}}<br>
             {{bid.description}}<br>
             {{bid.get_status_display}}<br>
-            {{bid.created}}</p></li>
+            {{bid.created}}</p>
+            <a href='{% url "answer_create" pk=bid.id %}'>Добавить ответ</a></li>
         {% endfor %}
     </ul>
 {% endif %}
+
+
     </div>
 </div>
 {% endblock %}

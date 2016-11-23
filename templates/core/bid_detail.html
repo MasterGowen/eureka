@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Детализация по заявке</h3>
+<div class="row">
+    <div class="span6 offset3 ">
+
+
+    <ul>
+
+        <li><p>{{bid.product}}<br>
+            {{bid.description}}<br>
+            {{bid.get_status_display}}<br>
+            {{bid.created}}</p>
+            <a href='{% url "answer_create" pk=bid.id %}'>Добавить ответ</a></li>
+        </ul>
+    </div>
+
+    <h3>Предложения</h3>
+{% if answers %}
+    <ul>
+        {% for answer in answers %}
+        <li><p>{{answer.created}}: {{answer.price}} {{answer.get_currency_display}}</p></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+</div>
+{% endblock %}

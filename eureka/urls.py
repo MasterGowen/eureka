@@ -16,13 +16,19 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from apps.core.views import profile, top_bids
+from django.contrib.auth.decorators import login_required
+
+from apps.core.views import profile, top_bids, BidCreate, AnswerCreate, bids, bid_detail
 
 urlpatterns = [
     #url(r'^/', include('core.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^top/$', top_bids),
-    url(r'^profile/$', profile)
+    url(r'^profile/$', profile),
+    url(r'^bid/create/$', login_required(BidCreate.as_view()), name="bid_create"),
+    url(r'^answer/create/(?P<pk>[0-9A-Za-z-]+)/$', login_required(AnswerCreate.as_view()), name="answer_create"),
+    url(r'^bids/$', bids),
+    url(r'^bid/(?P<pk>[0-9A-Za-z-]+)/$', bid_detail, name="bid_detail"),
 
 ]

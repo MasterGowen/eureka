@@ -32,12 +32,24 @@ class Bid(models.Model):
     created = models.DateTimeField(auto_now_add=True)  # Сразу добавляем текущую дату
     updated = models.DateTimeField(auto_now=True)  # Сохраняем время последнего изменения
 
+    def get_absolute_url(self):  # TODO: Убить эту дичь!
+        return '/profile/'
+
 
 class Answer(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, blank=False)
     bid = models.ForeignKey(Bid, on_delete=models.CASCADE, blank=False)
     description = models.TextField(max_length=500, blank=False)
     status = models.IntegerField(default=0)  # 0 - актуальный 1- не актуальный
+    price = models.DecimalField(default=0, decimal_places=2, max_digits=12, blank=False)
+    CURRENCIES = (
+        ('rur', 'RUR'),
+        ('usd', 'USD'),
+        ('eur', 'Euro'),
+    )
+    currency = models.CharField(choices=CURRENCIES, default='rur', max_length=3)
+    url = models.URLField(max_length=2048, null=True)
+    created = models.DateTimeField(auto_now_add=True, blank=True)  # Сразу добавляем текущую дату
 
 
 class Thread(models.Model):

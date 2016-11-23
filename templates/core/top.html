@@ -4,7 +4,11 @@
 {% if answers %}
     <ul>
         {% for answer in answers %}
-        <li><p>{{answer}}</p></li>
+        <li>
+        <p><strong>{{answer.bid.product}}</strong></p>
+        <p>{{answer.price}} {{answer.get_currency_display}}</p>
+        <p>{{answer.description}}</p>
+        <p>{{answer.url}}</p></li>
         {% endfor %}
     </ul>
 {% endif %}

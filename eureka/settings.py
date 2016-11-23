@@ -26,7 +26,7 @@ SECRET_KEY = 'aw3=^pv1%mrn_+b(^u(il6hv8(!fv5x5vdg^_w$m_7=02h(x3_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['openedu.urfu.ru', ]
 
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
@@ -139,6 +139,12 @@ LOGIN_REDIRECT_URL = "/top/"
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+try:
+    from envs.customs import *
+except ImportError:
+    pass
+
 
 try:
     from local_settings import *
