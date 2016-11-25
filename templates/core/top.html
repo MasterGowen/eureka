@@ -1,15 +1,18 @@
 {% extends "base.html" %}
+
+{% load i18n %}
+
 {% block content %}
-    <h2>Топ заявок</h2>
+    <h1>{% trans 'Top bids' %}</h1>
     {% if answers %}
         <table class="table">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Продукт</th>
-                    <th>Стоимость</th>
-                    <th>Описание</th>
-                    <th>Ссылка (Купить)</th>
+                    <th>{% trans '#' %}</th>
+                    <th>{% trans 'Product' %}</th>
+                    <th>{% trans 'Price' %}</th>
+                    <th>{% trans 'Description' %}</th>
+                    <th>{% trans 'Buy' %}</th>
                 </tr>
             </thead>
             <tbody>

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django import forms
-from .models import Bid, Answer
+from .models import Bid, Answer, User
+from django.contrib.auth.admin import UserAdmin
 
 
 class BidForm(forms.ModelForm):
@@ -27,6 +28,7 @@ class AnswerAdmin(admin.ModelAdmin):
 
 admin.site.register(Bid, BidAdmin)
 admin.site.register(Answer, AnswerAdmin)
+admin.site.register(User, UserAdmin)
 
 
 

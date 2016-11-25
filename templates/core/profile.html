@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 {% load tz %}
 {% load i18n %}
+
 {% load eu_filters %}
 
 {% block content %}
-    <h3>Заявки пользователя</h3>
+    <h1>{% trans 'My bids' %}</h1>
     {% if bids %}
         <table class="table">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Продукт</th>
-                    <th>Описание</th>
-                    <th>Статус</th>
-                    <th>Дата создания</th>
-                    <th>Детализация</th>
+                    <th>{% trans '#' %}</th>
+                    <th>{% trans 'Product' %}</th>
+                    <th>{% trans 'Description' %}</th>
+                    <th>{% trans 'Status' %}</th>
+                    <th>{% trans 'Created' %}</th>
+                    <th>{% trans 'Detail' %}</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,7 +26,7 @@
                         <td>{{bid.description}}</td>
                         <td>{{bid.get_status_display}}</td>
                         <td>{{ bid.created| localtime |time:"H:i"  }} {{ bid.created | date:"D d M Y"}} </td>
-                        <td><a href='{% url "bid_detail" bid.id %}'>Просмотр</a></td>
+                        <td><a href='{% url "bid_detail" bid.id %}'>{% trans 'View more' %}</a></td>
                     </tr>
                 {% endfor %}
             </tbody>

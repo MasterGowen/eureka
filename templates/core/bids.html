@@ -1,17 +1,20 @@
 {% extends "base.html" %}
+
+{% load i18n %}
 {% load eu_filters %}
+
 {% block content %}
-    <h2>Все заявки</h2>
+    <h1>{% trans "All bids" %}</h1>
     {% if bids %}
         <table class="table">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Продукт</th>
-                    <th>Описание</th>
-                    <th>Статус</th>
-                    <th>Дата создания</th>
-                    <th>Действие</th>
+                    <th>{% trans '#' %}</th>
+                    <th>{% trans 'Product' %}</th>
+                    <th>{% trans 'Description' %}</th>
+                    <th>{% trans 'Status' %}</th>
+                    <th>{% trans 'Created' %}</th>
+                    <th>{% trans 'Action' %}</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,9 +26,9 @@
                         <td>{{bid.get_status_display}}</td>
                         <td>{{bid.created}}</td>
                         {% if not bid.author == user %}
-                        <td><a href='{% url "answer_create" pk=bid.id %}'>Добавить ответ</a></td>
+                        <td><a href='{% url "answer_create" pk=bid.id %}'>{% trans 'Add offer' %}</a></td>
                         {% else %}
-                        <td>Вы не можете ответить на свою заявку</td>
+                        <td>{% trans "You can't offer your bid" %}</td>
                         {% endif %}
                     </tr>
                 {% endfor %}

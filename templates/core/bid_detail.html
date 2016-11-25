@@ -1,26 +1,27 @@
 {% extends "base.html" %}
 {% load eu_filters %}
+{% load i18n %}
 {% block content %}
-    <h3>Детализация по заявке</h3>
+    <h3>{% trans 'Bid detail' %}</h3>
     <ul>
         <li><p>{{bid.product}}<br>
             {{bid.description}}<br>
             {{bid.get_status_display}}<br>
         {{bid.created}}</p>
         {% if not bid.author == user %}
-            <a href='{% url "answer_create" pk=bid.id %}'>Добавить ответ</a></li>
+            <a href='{% url "answer_create" pk=bid.id %}'>{% trans 'Add offer' %}</a></li>
         {% endif %}
     </ul>
-    <h3>Предложения</h3>
+    <h3>{% trans 'Offers' %}</h3>
     {% if answers %}
         <table class="table">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Стоимость</th>
-                    <th>Дата создания</th>
-                    <th>Ссылка</th>
-                    <th>Описание</th>
+                    <th>{% trans '#' %}</th>
+                    <th>{% trans 'Price' %}</th>
+                    <th>{% trans 'Date of creation' %}</th>
+                    <th>{% trans 'Link' %}</th>
+                    <th>{% trans 'Description' %}</th>
                 </tr>
             </thead>
             <tbody>
