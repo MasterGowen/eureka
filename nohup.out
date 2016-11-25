@@ -1,0 +1,428 @@
+[23/Nov/2016 21:53:27] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:28] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:28] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:28] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:31] "GET / HTTP/1.1" 200 6225
+[23/Nov/2016 21:53:36] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:36] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:37] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:37] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:53:37] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:28] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:29] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:29] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:35] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 21:56:36] "GET / HTTP/1.1" 200 7743
+[23/Nov/2016 21:56:36] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:37] "GET /bid/create/ HTTP/1.1" 200 5711
+[23/Nov/2016 21:56:38] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:38] "GET / HTTP/1.1" 200 7743
+[23/Nov/2016 21:56:38] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 21:56:39] "GET / HTTP/1.1" 200 7743
+[23/Nov/2016 21:56:39] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:40] "GET /bid/create/ HTTP/1.1" 200 5711
+[23/Nov/2016 21:56:41] "GET /bids/ HTTP/1.1" 200 10972
+[23/Nov/2016 21:56:42] "GET / HTTP/1.1" 200 7743
+[23/Nov/2016 21:56:42] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 21:56:46] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 21:56:51] "GET /admin/account/emailaddress/ HTTP/1.1" 200 6718
+[23/Nov/2016 21:56:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:56:51] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[23/Nov/2016 21:56:54] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 21:56:57] "GET /admin/socialaccount/socialaccount/ HTTP/1.1" 200 5704
+[23/Nov/2016 21:56:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:56:59] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 21:57:05] "GET /admin/socialaccount/socialtoken/ HTTP/1.1" 200 6597
+[23/Nov/2016 21:57:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:57:10] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 21:57:13] "GET /admin/auth/group/ HTTP/1.1" 200 3382
+[23/Nov/2016 21:57:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:57:16] "GET /admin/auth/group/add/ HTTP/1.1" 200 8347
+[23/Nov/2016 21:57:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:57:23] "GET /admin/auth/group/ HTTP/1.1" 200 3382
+[23/Nov/2016 21:59:04] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 21:59:07] "GET /admin/core/answer/ HTTP/1.1" 200 8949
+[23/Nov/2016 21:59:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:59:13] "GET /admin/core/answer/9/change/ HTTP/1.1" 200 8991
+[23/Nov/2016 21:59:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 21:59:58] "GET /admin/core/answer/ HTTP/1.1" 200 8949
+[23/Nov/2016 21:59:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:18] "GET /admin/core/ HTTP/1.1" 200 2568
+[23/Nov/2016 22:00:19] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 22:00:20] "GET /admin/account/emailaddress/ HTTP/1.1" 200 6718
+[23/Nov/2016 22:00:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:24] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 22:00:26] "GET /admin/socialaccount/socialaccount/ HTTP/1.1" 200 5704
+[23/Nov/2016 22:00:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:30] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 22:00:32] "GET /admin/socialaccount/socialtoken/ HTTP/1.1" 200 6597
+[23/Nov/2016 22:00:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:32] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:00:32] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[23/Nov/2016 22:00:34] "GET /admin/socialaccount/socialtoken/2/change/ HTTP/1.1" 200 7285
+[23/Nov/2016 22:00:34] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[23/Nov/2016 22:00:34] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[23/Nov/2016 22:00:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:34] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[23/Nov/2016 22:00:34] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[23/Nov/2016 22:00:37] "GET /admin/socialaccount/socialtoken/ HTTP/1.1" 200 6597
+[23/Nov/2016 22:00:38] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 22:00:40] "GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 4504
+[23/Nov/2016 22:00:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:45] "GET /admin/ HTTP/1.1" 200 9851
+[23/Nov/2016 22:00:46] "GET /admin/socialaccount/socialaccount/ HTTP/1.1" 200 5704
+[23/Nov/2016 22:00:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:00:49] "GET /admin/socialaccount/socialaccount/1/change/ HTTP/1.1" 200 11442
+[23/Nov/2016 22:00:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[23/Nov/2016 22:01:10] "GET /admin/socialaccount/socialaccount/ HTTP/1.1" 200 5704
+[23/Nov/2016 22:01:39] "POST /accounts/login/ HTTP/1.1" 200 7873
+[23/Nov/2016 22:03:06] "POST /accounts/login/ HTTP/1.1" 200 7876
+[23/Nov/2016 22:08:24] "POST /accounts/login/ HTTP/1.1" 200 7876
+[23/Nov/2016 22:09:19] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:09:19] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[23/Nov/2016 22:17:40] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:17:40] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+Not Found: /favicon.ico
+[23/Nov/2016 22:17:43] "GET /favicon.ico HTTP/1.1" 404 2856
+[23/Nov/2016 22:19:02] "GET /accounts/signup/ HTTP/1.1" 200 5458
+[23/Nov/2016 22:19:28] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:19:29] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[23/Nov/2016 22:20:08] "POST /accounts/signup/ HTTP/1.1" 200 5611
+[23/Nov/2016 22:20:43] "POST /accounts/signup/ HTTP/1.1" 302 0
+[23/Nov/2016 22:20:43] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 22:20:53] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 22:20:56] "GET / HTTP/1.1" 200 4822
+[23/Nov/2016 22:21:00] "GET /bids/ HTTP/1.1" 200 11140
+[23/Nov/2016 22:21:07] "GET /bid/create/ HTTP/1.1" 200 5711
+[23/Nov/2016 22:23:39] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:23:40] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[23/Nov/2016 22:23:56] "GET /accounts/signup/ HTTP/1.1" 200 5458
+[23/Nov/2016 22:25:13] "POST /accounts/signup/ HTTP/1.1" 200 5686
+[23/Nov/2016 22:25:42] "GET /accounts/login/ HTTP/1.1" 200 7522
+[23/Nov/2016 22:26:05] "POST /accounts/login/ HTTP/1.1" 200 7741
+[23/Nov/2016 22:29:39] "POST /accounts/signup/ HTTP/1.1" 200 5574
+[23/Nov/2016 22:30:31] "POST /accounts/signup/ HTTP/1.1" 302 0
+[23/Nov/2016 22:30:31] "GET /top/ HTTP/1.1" 200 6653
+[23/Nov/2016 22:33:09] "GET /bids/ HTTP/1.1" 200 11148
+[23/Nov/2016 22:57:42] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:57:42] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+Not Found: /favicon.ico
+[23/Nov/2016 22:57:42] "GET /favicon.ico HTTP/1.1" 404 2856
+[23/Nov/2016 22:57:52] "POST /accounts/login/ HTTP/1.1" 302 0
+[23/Nov/2016 22:57:52] "GET / HTTP/1.1" 200 7743
+[23/Nov/2016 22:58:17] "GET /bid/create/ HTTP/1.1" 200 5711
+[23/Nov/2016 22:58:31] "POST /bid/create/ HTTP/1.1" 302 0
+[23/Nov/2016 22:58:31] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 22:58:37] "GET /accounts/logout/ HTTP/1.1" 200 5055
+[23/Nov/2016 22:58:38] "POST /accounts/logout/ HTTP/1.1" 302 0
+[23/Nov/2016 22:58:38] "GET / HTTP/1.1" 302 0
+[23/Nov/2016 22:58:38] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[23/Nov/2016 22:58:40] "GET /accounts/vk/login/?next=%2F&process= HTTP/1.1" 302 0
+[23/Nov/2016 22:59:03] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[23/Nov/2016 22:59:08] "POST /accounts/login/ HTTP/1.1" 302 0
+[23/Nov/2016 22:59:08] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 22:59:53] "GET /bid/b59abc7f-e0d8-45ba-a509-2dba88dbc343/ HTTP/1.1" 200 5018
+[23/Nov/2016 22:59:57] "GET /bid/bae91365-a39b-43a7-a844-0c882a9bbf3a/ HTTP/1.1" 200 6424
+[23/Nov/2016 22:59:59] "GET /bids/ HTTP/1.1" 200 11434
+[23/Nov/2016 23:00:05] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 23:00:15] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 23:00:20] "GET /bids/ HTTP/1.1" 200 11434
+[23/Nov/2016 23:00:23] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 23:00:27] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 23:00:40] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 23:00:47] "GET /top/ HTTP/1.1" 200 6645
+[23/Nov/2016 23:01:14] "GET /bids/ HTTP/1.1" 200 11434
+[23/Nov/2016 23:01:15] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 23:01:16] "GET /bids/ HTTP/1.1" 200 11434
+[23/Nov/2016 23:02:27] "GET / HTTP/1.1" 200 8158
+[23/Nov/2016 23:02:33] "GET /bid/b59abc7f-e0d8-45ba-a509-2dba88dbc343/ HTTP/1.1" 200 5018
+[23/Nov/2016 23:02:37] "GET /bid/bae91365-a39b-43a7-a844-0c882a9bbf3a/ HTTP/1.1" 200 6424
+[23/Nov/2016 23:02:43] "GET /bid/d4a8ef16-b125-4bf2-b247-38711f2bd59d/ HTTP/1.1" 200 5037
+[23/Nov/2016 23:20:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[23/Nov/2016 23:20:22] "    c                           " 400 -
+[24/Nov/2016 00:05:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\xe2\x01\x00\x00\xde\x03\x03X5\xe8\xbf\xb4\xd1\xb21gG\x08\xc8')
+[24/Nov/2016 00:05:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[24/Nov/2016 00:05:50] code 400, message Bad request version ('\xc4\xd0H\x82\xe4Y\xb4\xef1\xf9\x00\x00"\x00\xffV\x00\xc0$\xc0#\xc0')
+[24/Nov/2016 00:05:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[24/Nov/2016 00:06:53] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 00:06:53] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[24/Nov/2016 00:07:32] "POST /accounts/login/ HTTP/1.1" 302 0
+[24/Nov/2016 00:07:32] "GET / HTTP/1.1" 200 6916
+[24/Nov/2016 00:07:46] "GET /top/ HTTP/1.1" 200 6651
+[24/Nov/2016 00:08:02] "GET /bids/ HTTP/1.1" 200 11524
+[24/Nov/2016 00:45:31] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 00:45:32] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[24/Nov/2016 00:45:42] "GET /accounts/signup/ HTTP/1.1" 200 5458
+[24/Nov/2016 00:45:47] "GET /accounts/login/ HTTP/1.1" 200 7522
+[24/Nov/2016 00:46:08] "POST /accounts/login/ HTTP/1.1" 302 0
+[24/Nov/2016 00:46:08] "GET /top/ HTTP/1.1" 200 6653
+[24/Nov/2016 00:46:44] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 00:46:49] "GET /bids/ HTTP/1.1" 200 11638
+[24/Nov/2016 00:47:08] "GET /bid/create/ HTTP/1.1" 200 5719
+[24/Nov/2016 00:47:34] "GET /bids/ HTTP/1.1" 200 11638
+[24/Nov/2016 00:47:37] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 00:47:38] "GET /top/ HTTP/1.1" 200 6653
+[24/Nov/2016 00:47:43] "GET /top/ HTTP/1.1" 200 6653
+[24/Nov/2016 00:47:45] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 00:47:47] "GET /top/ HTTP/1.1" 200 6653
+[24/Nov/2016 00:47:51] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 00:47:52] "GET /bids/ HTTP/1.1" 200 11638
+[24/Nov/2016 00:47:54] "GET /bid/create/ HTTP/1.1" 200 5719
+Not Found: /apple-touch-icon-152x152-precomposed.png
+[24/Nov/2016 00:47:59] "GET /apple-touch-icon-152x152-precomposed.png HTTP/1.1" 404 2943
+Not Found: /apple-touch-icon-152x152.png
+[24/Nov/2016 00:47:59] "GET /apple-touch-icon-152x152.png HTTP/1.1" 404 2907
+Not Found: /apple-touch-icon.png
+[24/Nov/2016 00:47:59] "GET /apple-touch-icon.png HTTP/1.1" 404 2883
+Not Found: /apple-touch-icon.png
+[24/Nov/2016 00:48:00] "GET /apple-touch-icon.png HTTP/1.1" 404 2883
+[24/Nov/2016 00:49:11] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 00:49:28] "GET /bid/create/ HTTP/1.1" 200 5719
+[24/Nov/2016 00:49:29] "GET /bids/ HTTP/1.1" 200 11638
+Not Found: /apple-touch-icon-152x152-precomposed.png
+[24/Nov/2016 00:49:39] "GET /apple-touch-icon-152x152-precomposed.png HTTP/1.1" 404 2943
+Not Found: /apple-touch-icon-152x152.png
+[24/Nov/2016 00:49:39] "GET /apple-touch-icon-152x152.png HTTP/1.1" 404 2907
+Not Found: /apple-touch-icon.png
+[24/Nov/2016 00:49:39] "GET /apple-touch-icon.png HTTP/1.1" 404 2883
+Not Found: /apple-touch-icon.png
+[24/Nov/2016 00:49:40] "GET /apple-touch-icon.png HTTP/1.1" 404 2883
+[24/Nov/2016 00:50:32] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 00:50:34] "GET /top/ HTTP/1.1" 200 6653
+[24/Nov/2016 00:51:28] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 09:07:28] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 11:10:05] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 11:10:05] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+Not Found: /favicon.ico
+[24/Nov/2016 11:10:06] "GET /favicon.ico HTTP/1.1" 404 2856
+[24/Nov/2016 11:14:07] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[24/Nov/2016 11:14:07] "    c                           " 400 -
+[24/Nov/2016 11:17:13] "GET /accounts/vk/login/?next=%2F&process= HTTP/1.1" 302 0
+[24/Nov/2016 11:17:14] "GET /accounts/vk/login/callback/?code=1605e375bc8a88ee31&state=j8iK7gxdW0c2 HTTP/1.1" 302 0
+[24/Nov/2016 11:17:14] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:17:19] "GET /top/ HTTP/1.1" 200 6650
+[24/Nov/2016 11:17:23] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:17:38] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:17:40] "GET /top/ HTTP/1.1" 200 6650
+[24/Nov/2016 11:17:48] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:18:02] "GET /answer/create/b59abc7f-e0d8-45ba-a509-2dba88dbc343/ HTTP/1.1" 200 6398
+[24/Nov/2016 11:18:12] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:18:14] "GET /bid/da13403d-e331-40cb-8410-b607e161b10e/ HTTP/1.1" 200 5060
+[24/Nov/2016 11:18:18] "GET /bid/b59abc7f-e0d8-45ba-a509-2dba88dbc343/ HTTP/1.1" 200 5144
+[24/Nov/2016 11:18:41] "GET /top/ HTTP/1.1" 200 6650
+[24/Nov/2016 11:18:44] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:19:31] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:19:50] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:19:53] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:19:54] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:19:54] "GET /top/ HTTP/1.1" 200 6650
+[24/Nov/2016 11:19:55] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:19:56] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:19:58] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:20:11] "GET /top/ HTTP/1.1" 200 6653
+[24/Nov/2016 11:20:14] "GET / HTTP/1.1" 200 4830
+[24/Nov/2016 11:20:14] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:20:18] "GET /bid/da13403d-e331-40cb-8410-b607e161b10e/ HTTP/1.1" 200 5060
+[24/Nov/2016 11:20:18] "GET /bid/create/ HTTP/1.1" 200 5719
+[24/Nov/2016 11:20:23] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:21:19] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:21:25] "GET /bids/ HTTP/1.1" 200 11638
+[24/Nov/2016 11:22:01] "GET /answer/create/b59abc7f-e0d8-45ba-a509-2dba88dbc343/ HTTP/1.1" 200 6401
+[24/Nov/2016 11:22:26] "GET /top/ HTTP/1.1" 200 6650
+[24/Nov/2016 11:22:36] "GET /bids/ HTTP/1.1" 200 11579
+[24/Nov/2016 11:23:41] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:23:56] "GET /bid/create/ HTTP/1.1" 200 5719
+[24/Nov/2016 11:24:32] "POST /bid/create/ HTTP/1.1" 302 0
+[24/Nov/2016 11:24:32] "GET / HTTP/1.1" 200 5701
+[24/Nov/2016 11:24:46] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:24:50] "GET /bid/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 5014
+[24/Nov/2016 11:24:53] "GET /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 6398
+[24/Nov/2016 11:24:56] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:25:37] "GET /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 6398
+[24/Nov/2016 11:26:23] "GET / HTTP/1.1" 200 5701
+[24/Nov/2016 11:26:26] "GET /bids/ HTTP/1.1" 200 12088
+[24/Nov/2016 11:27:04] "POST /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 302 0
+[24/Nov/2016 11:27:04] "GET /bid/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 5942
+[24/Nov/2016 11:27:08] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:27:14] "GET /bids/ HTTP/1.1" 200 12088
+[24/Nov/2016 11:27:20] "GET /bids/ HTTP/1.1" 200 12088
+[24/Nov/2016 11:27:20] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:27:23] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:27:27] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:27:31] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:27:32] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:27:38] "GET /bids/ HTTP/1.1" 200 12088
+[24/Nov/2016 11:27:40] "GET / HTTP/1.1" 200 6225
+[24/Nov/2016 11:27:43] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:28:08] "GET /bids/ HTTP/1.1" 200 12088
+[24/Nov/2016 11:30:46] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+Not Found: /favicon.ico
+[24/Nov/2016 11:30:46] "GET /favicon.ico HTTP/1.1" 404 2856
+[24/Nov/2016 11:35:08] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:35:08] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:36:56] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:37:00] "GET /bids/ HTTP/1.1" 200 12057
+[24/Nov/2016 11:37:01] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 11:39:51] "POST /bid/create/ HTTP/1.1" 302 0
+[24/Nov/2016 11:39:51] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 11:40:06] "GET /bids/ HTTP/1.1" 200 12754
+[24/Nov/2016 11:40:14] "GET /answer/create/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 6401
+[24/Nov/2016 11:40:22] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:40:25] "GET /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 6398
+[24/Nov/2016 11:41:24] "POST /answer/create/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 302 0
+[24/Nov/2016 11:41:24] "GET /bid/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 6044
+[24/Nov/2016 11:41:51] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:41:53] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 11:41:55] "GET /bid/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 5920
+[24/Nov/2016 11:42:14] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:42:18] "GET /bids/ HTTP/1.1" 200 12754
+[24/Nov/2016 11:42:21] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:42:23] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 11:42:26] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:43:52] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:43:54] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 11:43:55] "GET /bid/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 5920
+[24/Nov/2016 11:44:12] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 11:44:32] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 11:46:24] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 12:27:59] "GET /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 6398
+[24/Nov/2016 12:29:29] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 12:29:34] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 12:33:37] "GET /bid/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 5920
+[24/Nov/2016 12:34:03] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 13:16:52] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 13:16:52] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 13:16:53] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 13:16:55] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 13:16:56] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 13:16:57] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 13:17:07] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 13:17:07] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 13:17:08] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 13:17:09] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 13:17:09] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 13:17:10] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 13:17:11] "GET /bid/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 5920
+[24/Nov/2016 13:22:10] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 13:22:15] "GET /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 6398
+[24/Nov/2016 13:22:17] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 13:26:02] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 14:44:37] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[24/Nov/2016 14:44:37] "    c                           " 400 -
+Not Found: /apple-touch-icon-152x152-precomposed.png
+[24/Nov/2016 15:08:57] "GET /apple-touch-icon-152x152-precomposed.png HTTP/1.1" 404 2943
+Not Found: /apple-touch-icon-152x152.png
+[24/Nov/2016 15:08:57] "GET /apple-touch-icon-152x152.png HTTP/1.1" 404 2907
+Not Found: /apple-touch-icon.png
+[24/Nov/2016 15:08:57] "GET /apple-touch-icon.png HTTP/1.1" 404 2883
+Not Found: /apple-touch-icon.png
+[24/Nov/2016 15:08:57] "GET /apple-touch-icon.png HTTP/1.1" 404 2883
+[24/Nov/2016 17:27:47] "GET / HTTP/1.1" 200 6916
+Not Found: /favicon.ico
+[24/Nov/2016 17:27:47] "GET /favicon.ico HTTP/1.1" 404 2856
+[24/Nov/2016 17:27:49] "GET /top/ HTTP/1.1" 200 7410
+[24/Nov/2016 17:28:08] "GET / HTTP/1.1" 200 6916
+[24/Nov/2016 17:28:09] "GET /bids/ HTTP/1.1" 200 12668
+[24/Nov/2016 17:46:21] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[24/Nov/2016 17:46:21] "    c                           " 400 -
+[24/Nov/2016 17:53:00] "GET /bids/ HTTP/1.1" 302 0
+[24/Nov/2016 17:53:00] "GET /accounts/login/?next=/bids/ HTTP/1.1" 200 7676
+[24/Nov/2016 17:53:04] "GET /accounts/vk/login/?next=%2Fbids%2F&process= HTTP/1.1" 302 0
+[24/Nov/2016 17:53:05] "GET /accounts/vk/login/callback/?code=4e563a8e799fd4dc23&state=aNBC364KC8mm HTTP/1.1" 302 0
+[24/Nov/2016 17:53:05] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 17:54:59] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 17:55:00] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[24/Nov/2016 17:55:03] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 17:55:05] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 17:55:06] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 17:55:07] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 17:55:08] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 17:55:08] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 17:55:10] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 17:55:10] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 17:55:12] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 17:55:14] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 17:55:14] "POST /accounts/login/ HTTP/1.1" 200 7855
+[24/Nov/2016 17:55:26] "GET /top/ HTTP/1.1" 302 0
+[24/Nov/2016 17:55:26] "GET /accounts/login/?next=/top/ HTTP/1.1" 200 7671
+[24/Nov/2016 17:55:30] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 17:55:31] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[24/Nov/2016 17:55:34] "GET /accounts/vk/login/?next=%2F&process= HTTP/1.1" 302 0
+[24/Nov/2016 17:55:35] "GET /accounts/vk/login/callback/?code=d670ec548936aae893&state=jXq0Z7qFF8xZ HTTP/1.1" 302 0
+[24/Nov/2016 17:55:35] "GET / HTTP/1.1" 200 4826
+[24/Nov/2016 17:55:39] "GET /bids/ HTTP/1.1" 200 12778
+[24/Nov/2016 17:55:45] "GET /answer/create/7086ff98-7a73-456f-b073-844266692cd5/ HTTP/1.1" 200 6397
+[24/Nov/2016 17:55:50] "GET /bid/create/ HTTP/1.1" 200 5715
+[24/Nov/2016 18:07:22] "GET /top/ HTTP/1.1" 200 7408
+[24/Nov/2016 18:14:35] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 18:14:38] "GET /accounts/logout/ HTTP/1.1" 200 5060
+[24/Nov/2016 18:14:42] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 18:14:45] "GET /accounts/logout/ HTTP/1.1" 200 5060
+[24/Nov/2016 18:14:46] "POST /accounts/logout/ HTTP/1.1" 302 0
+[24/Nov/2016 18:14:46] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 18:14:46] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[24/Nov/2016 18:15:10] "GET /accounts/vk/login/?next=%2F&process= HTTP/1.1" 302 0
+[24/Nov/2016 18:15:10] "GET /accounts/vk/login/callback/?code=4b24c8e8b95f199e70&state=fOjXxmxZsP5y HTTP/1.1" 302 0
+[24/Nov/2016 18:15:10] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 18:15:13] "GET /accounts/email/ HTTP/1.1" 200 6449
+[24/Nov/2016 18:15:29] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 18:15:31] "GET / HTTP/1.1" 200 6816
+[24/Nov/2016 18:15:33] "GET /bids/ HTTP/1.1" 200 12695
+[24/Nov/2016 18:15:38] "GET /bid/create/ HTTP/1.1" 200 5716
+[24/Nov/2016 18:16:04] "POST /bid/create/ HTTP/1.1" 302 0
+[24/Nov/2016 18:16:04] "GET / HTTP/1.1" 200 7244
+[24/Nov/2016 18:16:21] "GET /bid/ddc4c16d-74f1-4506-af99-6db2ee542972/ HTTP/1.1" 200 5035
+[24/Nov/2016 18:16:25] "GET /bids/ HTTP/1.1" 200 13169
+[24/Nov/2016 18:16:40] "GET /top/ HTTP/1.1" 200 7409
+[24/Nov/2016 18:17:05] "GET /bids/ HTTP/1.1" 200 13169
+[24/Nov/2016 18:17:20] "GET /answer/create/3f31ffd6-caa8-4104-bd9d-81b1a3c647b6/ HTTP/1.1" 200 6398
+[24/Nov/2016 18:17:29] "GET /bids/ HTTP/1.1" 200 13169
+[24/Nov/2016 18:18:28] "GET /accounts/logout/ HTTP/1.1" 200 5060
+[24/Nov/2016 18:18:30] "POST /accounts/logout/ HTTP/1.1" 302 0
+[24/Nov/2016 18:18:30] "GET / HTTP/1.1" 302 0
+[24/Nov/2016 18:18:30] "GET /accounts/login/?next=/ HTTP/1.1" 200 7643
+[24/Nov/2016 18:18:51] "GET /accounts/vk/login/?next=%2F&process= HTTP/1.1" 302 0
+[24/Nov/2016 18:18:51] "GET /accounts/vk/login/callback/?code=1ccf483a988c2bc69d&state=wrv5nGhLRhCx HTTP/1.1" 302 0
+[24/Nov/2016 18:18:51] "GET / HTTP/1.1" 200 7244
+[24/Nov/2016 18:19:41] "GET /bids/ HTTP/1.1" 200 13169
+[24/Nov/2016 18:24:52] "GET /bids/ HTTP/1.1" 200 13169
+Not Found: /favicon.ico
+[24/Nov/2016 21:47:59] "GET /favicon.ico HTTP/1.1" 404 2856
+[24/Nov/2016 23:21:49] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[24/Nov/2016 23:21:49] "    c                           " 400 -
+[25/Nov/2016 09:51:37] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[25/Nov/2016 09:51:37] "    c                           " 400 -
+[25/Nov/2016 11:35:53] "GET /admin/ HTTP/1.1" 200 9851
+[25/Nov/2016 11:35:53] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Nov/2016 11:35:53] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 4504
+[25/Nov/2016 11:35:59] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Nov/2016 11:35:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[25/Nov/2016 11:35:59] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[25/Nov/2016 11:36:00] "GET /admin/ HTTP/1.1" 200 9851
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 23, 2016 - 21:53:24
+Django version 1.10.3, using settings 'eureka.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Fatal Python error: Py_Initialize: can't initialize sys standard streams
+OSError: [Errno 9] Bad file descriptor

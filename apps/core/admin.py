@@ -11,7 +11,7 @@ class BidForm(forms.ModelForm):
 
 
 class BidAdmin(admin.ModelAdmin):
-    list_display = ('author', 'product', 'description', 'status')
+    list_display = ('author', 'product', 'description', 'status', 'created', 'updated')
 
 
 class AnswerForm(forms.ModelForm):

@@ -14,17 +14,32 @@ class Command(BaseCommand):
             print(bid.id, 'status updated!')
             bid.save()
 
-            answer = Answer.objects.filter(bid=bid.id).order_by('price')[0]
+            try:
 
-            message = '''
+                answer = Answer.objects.filter(bid=bid.id).order_by('price')[0]
+            except:
+                answer = None
 
-            В ходе обработки Вашей заявки поступило выгодное предложение:
+            if answer:
 
-            Стоимость: {0}{1}
+                message = '''
 
-            Продукт: {2}
+                В ходе обработки Вашей заявки поступило выгодное предложение:
 
-            '''.format(answer.price, answer.currency,  bid.product)
+                Стоимость: {0}{1}
+
+                Продукт: {2}
+
+                '''.format(answer.price, answer.currency,  bid.product)
+
+            else:
+                message = '''
+                Истекло время выполнения Вашей заявки.
+                К сожалению, предложений не поступило!
+                Полная стоимость заявки возвращена на Ваш аккаунт Эврики.
+
+                Продукт: {0}
+                '''.format(bid.product)
 
             send_mail(
                 str(bid.author.name),

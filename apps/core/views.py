@@ -16,6 +16,7 @@ def profile(request):
     context = {}
     bids = Bid.objects.filter(author=request.user)
 
+
     context["bids"] = bids
     return render(request, 'core/profile.html', context)
 
@@ -24,7 +25,16 @@ def profile(request):
 @login_required
 def top_bids(request):
     context = {}
-    answers = Answer.objects.all()  # TODO: filter! + commercials
+
+    bids = Bid.objects.filter(status__exact='C')
+    answers = []
+
+    for bid in bids:
+        try:
+            answers.append(Answer.objects.filter(bid=bid.id).order_by('price')[0])
+        except:
+            pass
+
     context['answers'] = answers
     return render(request, "core/top.html", context)
 
@@ -61,7 +71,7 @@ class AnswerCreate(CreateView):
         try:
             return super(AnswerCreate, self).form_valid(form)
         except IntegrityError:
-            form.add_error('description',  'Вы не можете отвечать на собственную заявку')
+            form.non_field_errors('Вы не можете отвечать на собственную заявку')
             return self.form_invalid(form)
 
 

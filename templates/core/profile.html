@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load tz %}
 {% load i18n %}
+{% load eu_filters %}
 
 {% block content %}
     <h3>Заявки пользователя</h3>
@@ -17,7 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for bid in bids %}
+                {% for bid in bids|sort_by:'-created' %}
                     <tr>
                         <td>{{forloop.counter}}</td>
                         <td>{{bid.product}}</td>
