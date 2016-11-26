@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import AbstractUser
 from django.contrib import admin
 from django.core.validators import MinValueValidator
@@ -37,7 +38,7 @@ class Bid(models.Model):
     updated = models.DateTimeField(_('Updated'), auto_now=True)  # Сохраняем время последнего изменения
 
     def get_absolute_url(self):  # TODO: Убить эту дичь!
-        return '/'
+        return reverse('bid_detail', args=[str(self.id)])
 
 
 class Answer(models.Model):

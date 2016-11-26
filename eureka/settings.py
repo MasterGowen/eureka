@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django_extensions',
+    'haystack',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -110,6 +112,20 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIALACCOUNT_QUERY_EMAIL = True
 
+ELASTICSEARCH_AUTO_INDEX = True
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+    },
+    'elasticsearch': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}
+
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 
 
