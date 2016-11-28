@@ -54,13 +54,14 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.odnoklassniki',
     'allauth.socialaccount.providers.openid',
     'allauth.socialaccount.providers.twitter',
-
+    'tracking',
     'apps.core',
     'bootstrapform'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'tracking.middleware.VisitorTrackingMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -177,6 +178,11 @@ LOGIN_REDIRECT_URL = "/top/"
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+####TRACKING#####
+
+TRACK_PAGEVIEWS = True
+TRACK_QUERY_STRING = True
 
 try:
     from envs.customs import *

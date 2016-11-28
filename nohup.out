@@ -426,3 +426,152 @@ Starting development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
 Fatal Python error: Py_Initialize: can't initialize sys standard streams
 OSError: [Errno 9] Bad file descriptor
+[26/Nov/2016 20:39:40] "GET /search/?q=%D1%82%D0%B5%D0%BB%D0%B5 HTTP/1.1" 200 9438
+[26/Nov/2016 21:35:44] "GET /bid/create/ HTTP/1.1" 302 0
+[26/Nov/2016 21:35:45] "GET /accounts/login/?next=/bid/create/ HTTP/1.1" 200 10486
+Not Found: /favicon.ico
+[26/Nov/2016 21:35:47] "GET /favicon.ico HTTP/1.1" 404 3070
+Not Found: /favicon.ico
+[26/Nov/2016 22:23:38] "GET /favicon.ico HTTP/1.1" 404 3070
+[27/Nov/2016 00:27:58] "GET / HTTP/1.1" 302 0
+[27/Nov/2016 00:27:59] "GET /admin/ HTTP/1.1" 302 0
+[27/Nov/2016 00:27:59] "GET /accounts/login/?next=/ HTTP/1.1" 200 10340
+[27/Nov/2016 00:27:59] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1740
+[27/Nov/2016 03:50:31] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[27/Nov/2016 03:50:31] "    c                           " 400 -
+[27/Nov/2016 13:11:34] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x02\x01\xa8\xc0@\x8d\\\xdf\xc0B\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[27/Nov/2016 13:11:34] "   TZ          0I    \xa8\xc0@\x8d\\xdf\xc0B                                                 " 400 -
+[27/Nov/2016 20:29:53] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[27/Nov/2016 20:29:53] "    c                           " 400 -
+[28/Nov/2016 04:28:41] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[28/Nov/2016 04:28:41] "    c                           " 400 -
+Not Found: /robots.txt
+[28/Nov/2016 11:34:19] "GET /robots.txt HTTP/1.1" 404 3067
+[28/Nov/2016 11:34:23] "GET / HTTP/1.1" 302 0
+[28/Nov/2016 11:34:27] "GET /accounts/login/?next=/ HTTP/1.1" 200 10340
+[28/Nov/2016 13:11:41] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[28/Nov/2016 13:11:41] "    c                           " 400 -
+[28/Nov/2016 14:21:13] "GET /top/ HTTP/1.1" 200 7385
+[28/Nov/2016 14:21:14] "GET /bids/ HTTP/1.1" 200 9262
+[28/Nov/2016 14:21:17] "GET / HTTP/1.1" 200 9230
+[28/Nov/2016 14:21:18] "GET /bids/ HTTP/1.1" 200 9262
+[28/Nov/2016 14:21:24] "GET /search/ HTTP/1.1" 200 7635
+[28/Nov/2016 14:21:42] "GET /search/?q=213 HTTP/1.1" 200 8194
+[28/Nov/2016 14:21:43] "GET /search/?q=213&models=core.bid HTTP/1.1" 200 8212
+[28/Nov/2016 14:21:45] "GET /search/?q=213&models=core.bid HTTP/1.1" 200 8212
+[28/Nov/2016 14:21:47] "GET /search/?q=123&models=core.bid HTTP/1.1" 200 8560
+[28/Nov/2016 14:21:48] "GET /search/?q=123 HTTP/1.1" 200 8542
+[28/Nov/2016 14:21:49] "GET /search/?q=123 HTTP/1.1" 200 8542
+[28/Nov/2016 14:21:55] "GET /search/?q=%D1%82%D0%B5%D0%BB%D0%B5 HTTP/1.1" 200 9438
+[28/Nov/2016 15:34:49] "GET /admin/ HTTP/1.1" 302 0
+[28/Nov/2016 15:34:49] "GET / HTTP/1.1" 302 0
+[28/Nov/2016 15:34:49] "GET /accounts/login/?next=/ HTTP/1.1" 200 10340
+[28/Nov/2016 15:34:49] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1740
+[28/Nov/2016 15:34:49] "GET /accounts/login/?next=/ HTTP/1.1" 200 10340
+Not Found: /favicon.ico
+[28/Nov/2016 15:34:49] "GET /favicon.ico HTTP/1.1" 404 3070
+Not Found: /favicon.ico
+[28/Nov/2016 15:34:49] "GET /favicon.ico HTTP/1.1" 404 3070
+[28/Nov/2016 16:59:58] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[28/Nov/2016 16:59:58] "    c                           " 400 -
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 26, 2016 - 20:39:38
+Django version 1.10.3, using settings 'eureka.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): tracking.
+Run 'python manage.py migrate' to apply them.
+November 28, 2016 - 17:36:23
+Django version 1.10.3, using settings 'eureka.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x80819eb70>
+Traceback (most recent call last):
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/management/commands/runserver.py", line 142, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/contrib/staticfiles/management/commands/runserver.py", line 27, in get_handler
+    handler = super(Command, self).get_handler(*args, **options)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/management/commands/runserver.py", line 64, in get_handler
+    return get_internal_wsgi_application()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/servers/basehttp.py", line 49, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/usr/home/serge/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/usr/home/serge/eureka/eureka/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    return WSGIHandler()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/handlers/wsgi.py", line 153, in __init__
+    self.load_middleware()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 82, in load_middleware
+    mw_instance = middleware(handler)
+TypeError: object() takes no parameters
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): tracking.
+Run 'python manage.py migrate' to apply them.
+November 28, 2016 - 17:36:35
+Django version 1.10.3, using settings 'eureka.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x80819db70>
+Traceback (most recent call last):
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/management/commands/runserver.py", line 142, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/contrib/staticfiles/management/commands/runserver.py", line 27, in get_handler
+    handler = super(Command, self).get_handler(*args, **options)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/management/commands/runserver.py", line 64, in get_handler
+    return get_internal_wsgi_application()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/servers/basehttp.py", line 49, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/usr/home/serge/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/usr/home/serge/eureka/eureka/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    return WSGIHandler()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/handlers/wsgi.py", line 153, in __init__
+    self.load_middleware()
+  File "/usr/home/serge/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 82, in load_middleware
+    mw_instance = middleware(handler)
+TypeError: object() takes no parameters
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): tracking.
+Run 'python manage.py migrate' to apply them.
+November 28, 2016 - 17:39:22
+Django version 1.10.3, using settings 'eureka.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.

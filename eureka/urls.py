@@ -22,6 +22,7 @@ from apps.core.views import profile, top_bids, BidCreate, AnswerCreate, bids, bi
 
 urlpatterns = [
     #url(r'^/', include('core.urls')),
+    url(r'^tracking/', include('tracking.urls')),
     url(r'^search/', include('haystack.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^admin/', admin.site.urls),
