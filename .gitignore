@@ -89,3 +89,9 @@ ENV/
 .ropeproject
 db.sqlite3
 customs.py
+local_settings/*
+.idea/eureka.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+eureka.db
