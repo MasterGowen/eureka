@@ -16,10 +16,10 @@ from decimal import *
 
 
 class User(AbstractUser):
-    name = models.CharField(_('Name'), max_length=500, blank=True)  # Имя - это не текст, это строка!
-    phone_number = models.CharField(_('Phone number'), max_length=30, blank=True) # Не надо транслита, никаких tel, это нечитаемо в коде!
-    email = models.EmailField(_('Email'), max_length=30, blank=True)  # Email - всегда EmailField!
-    balance = models.DecimalField(_('Balance'), default=0, decimal_places=2, max_digits=12, blank=False, validators=[MinValueValidator(Decimal('0.01'))])  # Деньги - всегда DecimalField!
+    name = models.CharField(_('Name'), max_length=500, blank=True)
+    phone_number = models.CharField(_('Phone number'), max_length=30, blank=True)
+    email = models.EmailField(_('Email'), max_length=30, blank=True)
+    balance = models.DecimalField(_('Balance'), default=0, decimal_places=2, max_digits=12, blank=False, validators=[MinValueValidator(Decimal('0.01'))])
     #role = models.IntegerField(default=1, blank=False)
 
 
@@ -130,7 +130,7 @@ class Answer(models.Model):
 
 
 class Thread(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)  # Аналогично заявке, суровый айдишник
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     initiator = models.ForeignKey(User, related_name="initiator_user", blank=False)
     respondent = models.ManyToManyField(User, related_name="respondent_users", blank=True)
     bid = models.ForeignKey(Bid, blank=False)
@@ -162,3 +162,4 @@ class CategoryGroup(models.Model):
 
     def __str__(self):
         return self.title
+
