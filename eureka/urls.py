@@ -18,7 +18,7 @@ from django.contrib import admin
 
 from django.contrib.auth.decorators import login_required
 
-from apps.core.views import profile, top_bids, BidCreate, AnswerCreate, bids, bid_detail
+from apps.core.views import *
 
 urlpatterns = [
     #url(r'^/', include('core.urls')),
@@ -28,10 +28,13 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^top/$', top_bids, name="top"),
-    url(r'^$', profile, name="home"),
-    url(r'^bid/create/$', login_required(BidCreate.as_view()), name="bid_create"),
+    url(r'^$', home, name="home"),
+    url(r'^profile/$', profile, name="profile"),
+    url(r'^test/$', test, name="test"),
+    url(r'^bid/create/$', bid_create, name="bid_create"),
     url(r'^answer/create/(?P<pk>[0-9A-Za-z-]+)/$', login_required(AnswerCreate.as_view()), name="answer_create"),
     url(r'^bids/$', bids, name="bids"),
     url(r'^bid/(?P<pk>[0-9A-Za-z-]+)/$', bid_detail, name="bid_detail"),
+    url(r'^answers/(?P<pk>[0-9A-Za-z-]+)/$', answers, name="answers"),
 
 ]

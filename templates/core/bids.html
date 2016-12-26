@@ -1,12 +1,22 @@
 {% extends "base.html" %}
-
 {% load i18n %}
+{% load bootstrap %}
 {% load eu_filters %}
-
 {% block content %}
     <h1>{% trans "All bids" %}</h1>
-
-    {% if bids %}
+    <form method="get" action=".">
+        <table>
+            {{ form|bootstrap }}
+            <tr>
+                <td>
+                    <input type="submit" value="Search">
+                </td>
+            </tr>
+        </table>
+    </form>
+    {% if query %}
+        <h3>Results</h3>
+        
         <table class="table">
             <thead>
                 <tr>
@@ -15,25 +25,51 @@
                     <th>{% trans 'Description' %}</th>
                     <th>{% trans 'Status' %}</th>
                     <th>{% trans 'Created' %}</th>
+                    <th>{% trans 'Time left' %}</th>
                     <th>{% trans 'Action' %}</th>
+                    <th>{% trans 'Detail' %}</th>
                 </tr>
             </thead>
             <tbody>
-                {% for bid in bids|sort_by:'-created' %}
+                {% for result in query %}
                     <tr>
                         <td>{{forloop.counter}}</td>
-                        <td>{{bid.product}}</td>
-                        <td>{{bid.description}}</td>
-                        <td>{{bid.get_status_display}}</td>
-                        <td>{{bid.created}}</td>
-                        {% if not bid.author == user %}
-                        <td><a href='{% url "answer_create" pk=bid.id %}'>{% trans 'Add offer' %}</a></td>
+                        <td>{{result.object.product}}</td>
+                        <td>{{result.object.description}}</td>
+                        <td>{{result.object.get_status_display}}</td>
+                        <td>{{result.object.created}}</td>
+                        <td>{{result.object.timeleft}}</td>
+                        {% if not result.object.author == user %}
+                            <td><a href='{% url "answer_create" pk=result.object.id %}'>{% trans 'Add offer' %}</a></td>
                         {% else %}
-                        <td>{% trans "You can't offer your bid" %}</td>
+                            <td>{% trans "You can't offer your bid" %}</td>
                         {% endif %}
+                        <td><a href='{% url "bid_detail" result.object.id %}'>{% trans 'View more' %}</td>
                     </tr>
+                    {% empty %}
+                    <p>No results found.</p>
                 {% endfor %}
             </tbody>
         </table>
+        {% if page.has_previous or page.has_next %}
+            <div>
+                {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                |
+                {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+            </div>
+        {% endif %}
+    {% else %}
+        
+        
+    {% endif %}
+    
+    {% if not query and is_search %}
+    <p>По вашему запросу ничего не найдено</p>
+        <p>Создайте свою заявку</p>
+    <h1>{% trans 'Create bid' %}</h1>
+    <form action="{% url 'bid_create' %}" method="post">{% csrf_token %}
+        {{ bid_form | bootstrap }}
+        <input type="submit" value="{% trans 'Save' %}" />
+    </form>
     {% endif %}
 {% endblock %}

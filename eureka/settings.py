@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django_extensions',
     'haystack',
+    'djmoney',
+    'moneyed',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -56,7 +58,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.twitter',
     'tracking',
     'apps.core',
-    'bootstrapform'
+    'bootstrapform',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -160,7 +163,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 LOCALE_PATHS = (
@@ -178,16 +181,19 @@ LOGIN_REDIRECT_URL = "/top/"
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 ####TRACKING#####
 
 TRACK_PAGEVIEWS = True
 TRACK_QUERY_STRING = True
 
-try:
-    from envs.customs import *
-except ImportError:
-    pass
+# try:
+from eureka.envs.customs import *
+# except ImportError:
+#     pass
 
 
 try:

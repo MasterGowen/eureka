@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 {% load eu_filters %}
 {% load i18n %}
+{% block script %}
+    <script type="text/javascript">
+        getAnswers("{{bid.id}}", view_answers_bid_detail);
+    </script>
+{% endblock %}
 {% block content %}
     <h3>{% trans 'Bid detail' %}</h3>
     <ul>
-        <li><p>{{bid.product}}<br>
-            {{bid.description}}<br>
-            {{bid.get_status_display}}<br>
-        {{bid.created}}</p>
-        {% if not bid.author == user %}
-            <a href='{% url "answer_create" pk=bid.id %}'>{% trans 'Add offer' %}</a></li>
-        {% endif %}
+        <li>
+            <p>
+                {{bid.product}}<br>
+                {{bid.description}}<br>
+                {{bid.status}}<br>
+                {{bid.created}}<br>
+                {{bid.timeleft}}
+            </p>
+            {% if not bid.author == user %}
+                <a href='{% url "answer_create" pk=bid.id %}'>{% trans 'Add offer' %}</a></li>
+            {% endif %}
     </ul>
     <h3>{% trans 'Offers' %}</h3>
     {% if answers %}
@@ -24,7 +33,7 @@
                     <th>{% trans 'Description' %}</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="content_answers">
                 {% for answer in answers|sort_by:'price' %}
                     <tr>
                         <td>{{forloop.counter}}</td>

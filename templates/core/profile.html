@@ -24,7 +24,7 @@
                         <td>{{forloop.counter}}</td>
                         <td>{{bid.product}}</td>
                         <td>{{bid.description}}</td>
-                        <td>{{bid.get_status_display}}</td>
+                        <td>{{bid.status}}</td>
                         <td>{{ bid.created| localtime |time:"H:i"  }} {{ bid.created | date:"D d M Y"}} </td>
                         <td><a href='{% url "bid_detail" bid.id %}'>{% trans 'View more' %}</a></td>
                     </tr>

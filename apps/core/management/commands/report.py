@@ -1,51 +1,29 @@
 from django.core.management.base import BaseCommand, CommandError
 from apps.core.models import Bid, Answer
 from django.core.mail import send_mail
+
+from django.db.models import Q
+
 import datetime
 
 
 class Command(BaseCommand):
-    def handle(self, *args, **options):
+    def add_arguments(self, parser):
+        parser.add_argument('-t', nargs='+', type=str)
 
-        bids = Bid.objects.filter(status__exact='O', created__lte=datetime.datetime.now() - datetime.timedelta(seconds=60 * 5))
+    def myprint(self, str):
+        print(datetime.datetime.now().strftime('%d.%m.%Y %H:%M') + ": " + str)
 
+    def getWorkingBids(self):
+        return Bid.objects.filter(Q(_status__exact='O') | Q(_status__exact='R'))
+
+    def closeBids(self, bids):
         for bid in bids:
-            bid.status = 'C'
-            print(bid.id, 'status updated!')
-            bid.save()
+            # Время истекло поэтому меяем статус и отправляем сообщение
+            if bid.timeleft == 0:
+                bid.close()
 
-            try:
-
-                answer = Answer.objects.filter(bid=bid.id).order_by('price')[0]
-            except:
-                answer = None
-
-            if answer:
-
-                message = '''
-
-                В ходе обработки Вашей заявки поступило выгодное предложение:
-
-                Стоимость: {0}{1}
-
-                Продукт: {2}
-
-                '''.format(answer.price, answer.currency,  bid.product)
-
-            else:
-                message = '''
-                Истекло время выполнения Вашей заявки.
-                К сожалению, предложений не поступило!
-                Полная стоимость заявки возвращена на Ваш аккаунт Эврики.
-
-                Продукт: {0}
-                '''.format(bid.product)
-
-            send_mail(
-                str(bid.author.name),
-                message,
-                'n.v.ignatchenko@urfu.ru',
-                [bid.author.email, ],
-                fail_silently=False,
-            )
-
+    def handle(self, *args, **options):
+        self.myprint("Report started")
+        self.closeBids(self.getWorkingBids())
+        self.myprint("Report finished")

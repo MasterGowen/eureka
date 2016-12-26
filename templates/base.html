@@ -2,11 +2,18 @@
 {% load i18n %}
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as LANGUAGE_CODE %}
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+        <script type="text/javascript" src='{% static "maps.js" %}'></script>
+        <script type="text/javascript" src='{% static "request_ajax.js" %}'></script>
+        <script type="text/javascript" src='{% static "views.js" %}'></script>
+        {% block script %}
+        {% endblock %}
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <title>{% block head_title %}{% endblock %}</title>
         {% block extra_head %}
@@ -26,8 +33,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="{% active 'top' %}"><a href="{% url "top" %}">{% trans 'Top' %}</a></li>
-                        <li class="{% active '^/$' %}"><a href="{% url "home" %}">{% trans 'My bids' %}</a></li>
+                        {# <li class="{% active 'top' %}"><a href="{% url "top" %}">{% trans 'Top' %}</a></li> #}
+                        {% if user.is_authenticated %}
+                        <li class="{% active 'profile' %}"><a href="{% url "profile" %}">{% trans 'My bids' %}</a></li>
+                        {% endif %}
                         <li class="{% active 'bids' %}"><a href="{% url "bids" %}">{% trans 'All bids' %}</a></li>
                         <li class="{% active 'bid_create' %}"><a href="{% url "bid_create" %}">{% trans 'Create bid' %}</a></li>
                     </ul>
