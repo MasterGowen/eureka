@@ -16,7 +16,7 @@ requests==2.12.1
 requests-oauthlib==0.7.0
 simplejson==3.10.0
 six==1.10.0
-urllib3==1.19.1
+urllib3==1.26.5
 py-moneyed
 django-money
 django-phonenumber-field
